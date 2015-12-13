@@ -50,7 +50,7 @@ for line in sys.stdin:
         if line_cnt>1:
 	    for c in channels:  #loop thru dates, indexes start at 0
                  if c == filter_channel:
-	             print('{0} {1}'.format(curr_word, viewer_count))
+	             print('{0} {1} {2}'.format(viewer_count, curr_word, c))
             #now reset lists
 	    viewer_count = 0
             channels =[]
@@ -79,5 +79,5 @@ for line in sys.stdin:
 # ---------------------------------------------------------------
 for c in channels:  
     if c == filter_channel:
-         print('{0} {1}'.format(prev_word, viewer_count))
+         print('{0} {1} {2}'.format(viewer_count, curr_word, viewer_count))
 	
