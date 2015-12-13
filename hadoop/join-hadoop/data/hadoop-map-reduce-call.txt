@@ -1,0 +1,5 @@
+hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
+   -input /user/cloudera/input \
+   -output /user/cloudera/output_new \
+   -mapper /home/cloudera/bigdatacoursera/hadoop/wordcount-hadoop-streaming/wordcount_mapper.py \
+   -reducer /home/cloudera/bigdatacoursera/hadoop/wordcount-hadoop-streaming/wordcount_reducer.py
